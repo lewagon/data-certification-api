@@ -16,7 +16,7 @@ flake8
 pytest
 yapf
 
-# API
+# API Clients
 gcsfs
 google-cloud-storage
 mlflow
@@ -27,3 +27,7 @@ six>=1.14
 joblib
 memoized-property
 termcolor
+
+# API server
+fastapi
+uvicorn
