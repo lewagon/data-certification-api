@@ -86,7 +86,13 @@ Open your favourite text editor and proceed with the challenge.
 pip install -r requirements.txt
 ```
 
-If you encounter an version conflict while installing the packages, you will need to work in a new virtual environment:
+<details>
+  <summary>👉&nbsp;&nbsp;If you encounter a version conflict while installing the packages 👈</summary>
+
+  &nbsp;
+
+
+In this case you will need to create a new virtual environment in order to be able to load the pipeline.
 
 👉 Only execute this commands if you encounter an issue while installing the packages 🚨
 
@@ -96,6 +102,8 @@ pyenv virtualenv 3.8.6 certif
 pyenv local certif
 pip install -r requirements.txt
 ```
+
+</details>
 
 ## API endpoint
 
