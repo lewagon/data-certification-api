@@ -80,7 +80,7 @@ Open your favourite text editor and proceed with the challenge.
 
 **📝 Let's install the required packages.**
 
-👉 The `requirements.txt` file lists the exact version of the packages required in order to be able to load the trained pipeline that we provide
+👉 The `requirements.txt` file lists the exact version of the packages required in order to be able to load the pipelined model that we provide
 
 ``` bash
 pip install -r requirements.txt
