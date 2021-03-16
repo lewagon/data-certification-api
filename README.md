@@ -182,11 +182,11 @@ artist               object
 
 👉 The pipeline expects these parameters to be provided in this exact same order 🚨
 
-The API will return a json dictionary with a `pred` key containing the prediction of the popularity of the track as a `float`
+The API will return a json dictionary with a `pred` key containing the prediction of the popularity of the track as a `int`
 
 ``` json
 {
-  "pred": 22.245404331801364
+  "pred": 22
 }
 ```
 
