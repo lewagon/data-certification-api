@@ -230,6 +230,24 @@ Test your API using http://localhost:8000/docs and make sure that it works corre
 http://localhost:8000/predict?acousticness=0.654&danceability=0.499&duration_ms=219827&energy=0.19&explicit=0&id=0B6BeEUd6UwFlbsHMQKjob&instrumentalness=0.00409&key=7&liveness=0.0898&loudness=-16.435&mode=1&name=Back%20in%20the%20Goodle%20Days&release_date=1971&speechiness=0.0454&tempo=149.46&valence=0.43&artist=John%20Hartford
 ```
 
-💡 With a configured GCP account, the directives in the `Makefile` should be enough to push your API to production
+<details>
+  <summary>👉&nbsp;&nbsp;If you opt for Google Cloud Platform 👈</summary>
 
-👉 Remember to update the `GCP_PROJECT_ID` in the `Makefile` 🚨
+  &nbsp;
+
+
+Once you have changed your `GCP_PROJECT_ID` in the `Makefile`, run the following commands to build and test locally your container:
+
+``` bash
+make docker_build
+make docker_run
+```
+
+Then push and deploy your containerized API to Container Registry and finally Cloud Run:
+
+``` bash
+make docker_push
+make docker_deploy
+```
+
+<details>
