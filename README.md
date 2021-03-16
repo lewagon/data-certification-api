@@ -74,7 +74,7 @@ Open your favourite text editor and proceed with the challenge.
 
 👉 In this challenge you will only need to edit the code of the API in `api/app.py` 🚨
 
-👉 The package versions listed in `requirements.txt` should work out of the box will the pipeline saved in `model.joblib`
+👉 The package versions listed in `requirements.txt` should work out of the box with the pipelined model saved in `model.joblib`
 
 ### Install the required packages
 
