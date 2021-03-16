@@ -18,7 +18,7 @@ Go to https://github.com/lewagon/data-certification-api:
 - Click on `Create repository from template`
 - Click on `Code`
 - Select `SSH`
-- Copy the SSH URL of the repository (the format is `git@github.com:YOUR_NAME/data-certification-api.git`)
+- Copy the SSH URL of the repository (the format is `git@github.com:YOUR_GITHUB_NICKNAME/data-certification-api.git`)
 
 ### Clone the repository for the API challenge
 
