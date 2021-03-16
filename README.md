@@ -14,7 +14,7 @@ Le Wagon Data Science certification exam starter pack for the predictive API tes
 Go to https://github.com/lewagon/data-certification-api:
 - Click on `Use this template`
 - Enter the repository name `data-certification-api`
-- Set as **Public**
+- Set it as **Public**
 - Click on `Create repository from template`
 - Click on `Code`
 - Select `SSH`
