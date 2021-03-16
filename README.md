@@ -66,7 +66,7 @@ tree
 └── setup.py
 ```
 
-You can now open you favorite text editor and proceed with the challenges.
+Open your favourite text editor and proceed with the challenge.
 
 ## API challenge
 
