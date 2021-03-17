@@ -26,7 +26,7 @@ Go to https://github.com/lewagon/data-certification-api:
 
 Open your terminal and run the following commands:
 
-👉 replace `YOUR_GITHUB_NICKNAME` with your **github nickname** and `PASTE_REPOSITORY_URL_HERE` with the SSH URL you just copied:
+👉&nbsp;&nbsp;replace `YOUR_GITHUB_NICKNAME` with your **github nickname** and `PASTE_REPOSITORY_URL_HERE` with the SSH URL you just copied:
 
 ``` bash
 cd ~/code/YOUR_GITHUB_NICKNAME
@@ -72,9 +72,9 @@ Open your favourite text editor and proceed with the challenge.
 
 **📝&nbsp;&nbsp;In this challenge, you are provided with a trained model saved as `model.joblib`. The goal is to create an API that will predict the popularity of a song based on its other features.**
 
-👉 You will only need to edit the code of the API in `api/app.py` 🚨
+👉&nbsp;&nbsp;You will only need to edit the code of the API in `api/app.py` 🚨
 
-👉 The package versions listed in `requirements.txt` should work out of the box with the pipelined model saved in `model.joblib`
+👉&nbsp;&nbsp;The package versions listed in `requirements.txt` should work out of the box with the pipelined model saved in `model.joblib`
 
 ### Install the required packages
 
@@ -85,14 +85,14 @@ pip install -r requirements.txt
 ```
 
 <details>
-  <summary>👉&nbsp;&nbsp;If you encounter a version conflict while installing the packages 👈</summary>
+  <summary>👉&nbsp;&nbsp;nbsp;&nbsp;If you encounter a version conflict while installing the packages 👈</summary>
 
   &nbsp;
 
 
 In this case you will need to create a new virtual environment in order to be able to load the pipeline.
 
-👉 Only execute this commands if you encounter an issue while installing the packages 🚨
+👉&nbsp;&nbsp;Only execute this commands if you encounter an issue while installing the packages 🚨
 
 ``` bash
 pyenv install 3.8.6
@@ -115,7 +115,7 @@ uvicorn api.app:app --reload
 
 Open your browser at http://localhost:8000/
 
-👉 You should see the response `{ "ok": true }`
+👉&nbsp;&nbsp;You should see the response `{ "ok": true }`
 
 You will now be able to work on the content of the API while `uvicorn` automatically reloads your code as it changes.
 
@@ -168,7 +168,7 @@ Example response:
 **📝&nbsp;&nbsp;Push your API to production on the hosting service of your choice.**
 
 <details>
-  <summary>👉&nbsp;&nbsp;If you opt for Google Cloud Platform 👈</summary>
+  <summary>👉&nbsp;&nbsp;nbsp;&nbsp;If you opt for Google Cloud Platform 👈</summary>
 
   &nbsp;
 
