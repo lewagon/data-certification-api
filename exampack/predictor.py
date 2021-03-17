@@ -14,6 +14,9 @@ from sklearn.linear_model import LinearRegression
 class Trainer():
 
     def load_data(self):
+        """
+        load the data and return X and y
+        """
 
         # read data
         url = "https://wagon-public-datasets.s3.amazonaws.com/certification_paris_2021Q1/spotify_popularity_train.csv"
@@ -31,6 +34,29 @@ class Trainer():
         return X, y
 
     def create_pipeline(self):
+        """
+        the pipeline expects to be trained with a DataFrame containing
+        the following data types in that order
+        ```
+        acousticness        float64
+        danceability        float64
+        duration_ms           int64
+        energy              float64
+        explicit              int64
+        id                   object
+        instrumentalness    float64
+        key                   int64
+        liveness            float64
+        loudness            float64
+        mode                  int64
+        name                 object
+        release_date         object
+        speechiness         float64
+        tempo               float64
+        valence             float64
+        artist               object
+        ```
+        """
 
         column_transformer = ColumnTransformer([
             ("year_pipeline", StandardScaler(), ["acousticness"]),
@@ -44,6 +70,10 @@ class Trainer():
         return pipeline
 
     def train(self):
+        """
+        load the data and train a pipelined model
+        the pipelined model is saved to model.joblib
+        """
 
         # load data
         X, y = self.load_data()

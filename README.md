@@ -105,10 +105,6 @@ pip install -r requirements.txt
 
 </details>
 
-## API endpoint
-
-**📝 Let's begin by creating a prediction endpoint.**
-
 ### Run a uvicorn server
 
 **📝 Start a `uvicorn` server in order to make sure that the setup works correctly.**
@@ -125,110 +121,53 @@ Open your browser at http://localhost:8000/
 
 You will now be able to work on the content of the API while `uvicorn` automatically reloads your code as it changes.
 
-### Create a `prediction` endpoint
+### API specification
 
-**📝 Add a `/predict` endpoint to `api/app.py`.**
+**Predict the popularity of a Spotify song**
 
-👉 Remember, throughout this challenge, you are able to test your endpoint easily at http://localhost:8000/docs
+`GET /predict`
 
-### Load the pipeline
+| Parameter | Type | Description |
+|---|---|---|
+| acousticness | whether the track is acoustic | float |
+| danceability | describes how suitable a track is for dancing | float |
+| duration_ms | duration of the track in milliseconds | int |
+| energy | represents a perceptual measure of intensity and activity | float |
+| explicit | whether the track has explicit lyrics | int |
+| id | id for the track | string |
+| instrumentalness | predicts whether a track contains no vocals | float |
+| key | the key the track is in | int |
+| liveness | detects the presence of an audience in the recording | float |
+| loudness | the overall loudness of a track in decibels | float |
+| mode | modality of a track | int |
+| name | name of the track | string |
+| release_date | release date | string |
+| speechiness | detects the presence of spoken words in a track | float |
+| tempo | overall estimated tempo of a track in beats per minute | float |
+| valence | describes the musical positiveness conveyed by a track | float |
+| artist | artist who performed the track | string |
 
-**📝 In the prediction endpoint, load the trained pipeline that is provided.**
+Returns a dictionary with the `artist`, the `name` of the song and predicted `popularity` as an integer.
 
-👉 You can use the following code:
-
-``` python
-import joblib
-
-pipeline = joblib.load("model.joblib")
-```
-
-### API definition
-
-**📝 Here is the definition of the API that we want to create.**
-
-The API will take as input the following parameters:
-- acousticness: float
-- danceability: float
-- duration_ms: int
-- energy: float
-- explicit: int
-- id: string
-- instrumentalness: float
-- key: int
-- liveness: float
-- loudness: float
-- mode: int
-- name: string
-- release_date: string
-- speechiness: float
-- tempo: float
-- valence: float
-- artist: string
-
-💡 The pipeline contained in the `model.joblib` file expects for its predictions a `DataFrame` with the following data types:
+Example request:
 
 ```
-acousticness        float64
-danceability        float64
-duration_ms           int64
-energy              float64
-explicit              int64
-id                   object
-instrumentalness    float64
-key                   int64
-liveness            float64
-loudness            float64
-mode                  int64
-name                 object
-release_date         object
-speechiness         float64
-tempo               float64
-valence             float64
-artist               object
+/predict?acousticness=0.654&danceability=0.499&duration_ms=219827&energy=0.19&explicit=0&id=0B6BeEUd6UwFlbsHMQKjob&instrumentalness=0.00409&key=7&liveness=0.0898&loudness=-16.435&mode=1&name=Back%20in%20the%20Goodle%20Days&release_date=1971&speechiness=0.0454&tempo=149.46&valence=0.43&artist=John%20Hartford
 ```
 
-👉 The pipeline expects these parameters to be provided in this exact same order 🚨
-
-The API will return a json dictionary with a `pred` key containing the prediction of the popularity of the track as a `int`
+Example response:
 
 ``` json
 {
-  "pred": 22
+  "artist": "John Hartford",
+  "name": "Back in the Goodle Days",
+  "popularity": 28
 }
 ```
-
-### Handle the API parameters
-
-**📝 Add to your `/predict` endpoint the parameters that are required in order to make a prediction. Then create a `DataFrame` variable named `X_pred` from these parameters.**
-
-👉 Remember that `FastAPI` only provides `string` variables as parameters to the endpoint
-
-👉 Remember that the parameters need to be built into the `DataFrame` in the exact **same order** as the one required by the pipeline 🚨
-
-💡 One way of building a `DataFrame` from individual values is to create it from a dictionary of lists
-
-👉 Once `X_pred` is built, you may `print` it and have a look at the output of the `uvicorn` command in order to make sure that it is correctly created
-
-### Make a prediction
-
-**📝 Now that you have a trained pipeline and a `DataFrame` containing one observation, let's make a prediction and return it.**
-
-👉 Remember that `FastAPI` can only handle simple data types as returned `json` values
-
-Test your API using http://localhost:8000/docs and make sure that it works correctly before proceeding to put it in production.
 
 ## API in production
 
 **📝 Push your API to production on the hosting service of your choice.**
-
-👉 Remember to test your API locally and make an actual prediction before pushing your code to production in order to save time
-
-👉 You may test your API with the following parameters (change the domain and port with your own):
-
-```
-http://localhost:8000/predict?acousticness=0.654&danceability=0.499&duration_ms=219827&energy=0.19&explicit=0&id=0B6BeEUd6UwFlbsHMQKjob&instrumentalness=0.00409&key=7&liveness=0.0898&loudness=-16.435&mode=1&name=Back%20in%20the%20Goodle%20Days&release_date=1971&speechiness=0.0454&tempo=149.46&valence=0.43&artist=John%20Hartford
-```
 
 <details>
   <summary>👉&nbsp;&nbsp;If you opt for Google Cloud Platform 👈</summary>
