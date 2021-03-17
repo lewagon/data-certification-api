@@ -85,7 +85,7 @@ pip install -r requirements.txt
 ```
 
 <details>
-  <summary>👉&nbsp;&nbsp;nbsp;&nbsp;If you encounter a version conflict while installing the packages 👈</summary>
+  <summary>👉&nbsp;&nbsp;If you encounter a version conflict while installing the packages 👈</summary>
 
   &nbsp;
 
