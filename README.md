@@ -163,6 +163,8 @@ Example response:
 }
 ```
 
+👉 It is your turn, code the endpoint in `api/app.py`. If you want to verify what data types the pipeline expects, have a look at the docstring of the `create_pipeline` method in `exampack/trainer.py`.
+
 ## API in production
 
 **📝&nbsp;&nbsp;Push your API to production on the hosting service of your choice.**
