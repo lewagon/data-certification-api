@@ -72,7 +72,7 @@ Open your favourite text editor and proceed with the challenge.
 
 **📝 In this challenge, you are provided with a trained model saved as `model.joblib`. The goal is to create an API that will predict the popularity of a song based on its other features.**
 
-👉 In this challenge you will only need to edit the code of the API in `api/app.py` 🚨
+👉 You will only need to edit the code of the API in `api/app.py` 🚨
 
 👉 The package versions listed in `requirements.txt` should work out of the box with the pipelined model saved in `model.joblib`
 
