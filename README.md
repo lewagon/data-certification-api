@@ -168,7 +168,7 @@ Example response:
 **📝&nbsp;&nbsp;Push your API to production on the hosting service of your choice.**
 
 <details>
-  <summary>👉&nbsp;&nbsp;nbsp;&nbsp;If you opt for Google Cloud Platform 👈</summary>
+  <summary>👉&nbsp;&nbsp;If you opt for Google Cloud Platform 👈</summary>
 
   &nbsp;
 
