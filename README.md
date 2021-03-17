@@ -129,23 +129,23 @@ You will now be able to work on the content of the API while `uvicorn` automatic
 
 | Parameter | Type | Description |
 |---|---|---|
-| acousticness | whether the track is acoustic | float |
-| danceability | describes how suitable a track is for dancing | float |
-| duration_ms | duration of the track in milliseconds | int |
-| energy | represents a perceptual measure of intensity and activity | float |
-| explicit | whether the track has explicit lyrics | int |
-| id | id for the track | string |
-| instrumentalness | predicts whether a track contains no vocals | float |
-| key | the key the track is in | int |
-| liveness | detects the presence of an audience in the recording | float |
-| loudness | the overall loudness of a track in decibels | float |
-| mode | modality of a track | int |
-| name | name of the track | string |
-| release_date | release date | string |
-| speechiness | detects the presence of spoken words in a track | float |
-| tempo | overall estimated tempo of a track in beats per minute | float |
-| valence | describes the musical positiveness conveyed by a track | float |
-| artist | artist who performed the track | string |
+| acousticness | float | whether the track is acoustic |
+| danceability | float | describes how suitable a track is for dancing |
+| duration_ms | int | duration of the track in milliseconds |
+| energy | float | represents a perceptual measure of intensity and activity |
+| explicit | int | whether the track has explicit lyrics |
+| id | string | id for the track |
+| instrumentalness | float | predicts whether a track contains no vocals |
+| key | int | the key the track is in |
+| liveness | float | detects the presence of an audience in the recording |
+| loudness | float | the overall loudness of a track in decibels |
+| mode | int | modality of a track |
+| name | string | name of the track |
+| release_date | string | release date |
+| speechiness | float | detects the presence of spoken words in a track |
+| tempo | float | overall estimated tempo of a track in beats per minute |
+| valence | float | describes the musical positiveness conveyed by a track |
+| artist | string | artist who performed the track |
 
 Returns a dictionary with the `artist`, the `name` of the song and predicted `popularity` as an integer.
 
