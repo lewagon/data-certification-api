@@ -3,13 +3,13 @@
 
 Le Wagon Data Science certification exam starter pack for the predictive API test.
 
-**💡 This challenge is completely independent of other challenges. It is not required to complete any other challenge in order to work on this challenge.**
+**💡&nbsp;&nbsp;This challenge is completely independent of other challenges. It is not required to complete any other challenge in order to work on this challenge.**
 
 ## Setup
 
 ### Duplicate the repository for the API challenge
 
-**📝 Let's duplicate the repository of the API challenge.**
+**📝&nbsp;&nbsp;Let's duplicate the repository of the API challenge.**
 
 Go to https://github.com/lewagon/data-certification-api:
 - Click on `Use this template`
@@ -22,7 +22,7 @@ Go to https://github.com/lewagon/data-certification-api:
 
 ### Clone the repository for the API challenge
 
-**📝 Now we will clone your new repository.**
+**📝&nbsp;&nbsp;Now we will clone your new repository.**
 
 Open your terminal and run the following commands:
 
@@ -36,7 +36,7 @@ cd data-certification-api
 
 ### Look around
 
-**💡 The content of the challenge should look like this:**
+**💡&nbsp;&nbsp;The content of the challenge should look like this:**
 
 ``` bash
 tree
@@ -70,7 +70,7 @@ Open your favourite text editor and proceed with the challenge.
 
 ## API challenge
 
-**📝 In this challenge, you are provided with a trained model saved as `model.joblib`. The goal is to create an API that will predict the popularity of a song based on its other features.**
+**📝&nbsp;&nbsp;In this challenge, you are provided with a trained model saved as `model.joblib`. The goal is to create an API that will predict the popularity of a song based on its other features.**
 
 👉 You will only need to edit the code of the API in `api/app.py` 🚨
 
@@ -105,7 +105,7 @@ pip install -r requirements.txt
 
 ### Run a uvicorn server
 
-**📝 Start a `uvicorn` server in order to make sure that the setup works correctly.**
+**📝&nbsp;&nbsp;Start a `uvicorn` server in order to make sure that the setup works correctly.**
 
 Run the server:
 
@@ -165,7 +165,7 @@ Example response:
 
 ## API in production
 
-**📝 Push your API to production on the hosting service of your choice.**
+**📝&nbsp;&nbsp;Push your API to production on the hosting service of your choice.**
 
 <details>
   <summary>👉&nbsp;&nbsp;If you opt for Google Cloud Platform 👈</summary>
