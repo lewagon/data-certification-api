@@ -175,18 +175,6 @@ Example response:
   &nbsp;
 
 
-Once you have changed your `GCP_PROJECT_ID` in the `Makefile`, run the following commands to build and test locally your container:
-
-``` bash
-make docker_build
-make docker_run
-```
-
-Then push and deploy your containerized API to Container Registry and finally Cloud Run:
-
-``` bash
-make docker_push
-make docker_deploy
-```
+Once you have changed your `GCP_PROJECT_ID` in the `Makefile`, run the following commands to build and deploy your containerized API to Container Registry and finally Cloud Run.
 
 </details>
