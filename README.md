@@ -159,7 +159,7 @@ Example response:
 {
   "artist": "John Hartford",
   "name": "Back in the Goodle Days",
-  "popularity": 28
+  "popularity": 22
 }
 ```
 
